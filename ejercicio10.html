@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio10.css">
+    <script src="js/ejercicio10.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div>
+            <h1>Calculadora Celsius a Farenheit</h1>
+        </div>
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label>Grados Celsius (°C): </label>
+                <input type="text" id="celsius" placeholder="Ej. 45" required>
+            </div>
+
+            <button class="boton-con" id="c" type="button" onclick="convertir()">Convertir</button>
+
+            <div class="grupo-formulario">
+                <label>Grados Farenheit (°F): </label>
+                <input type="text" id="farenheit" required readonly>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
