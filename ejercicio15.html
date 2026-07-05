@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ejercicio15.js"></script>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+    <title>Comprobación de edad</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div>
+            <h1>Calificaciones</h1>
+            <p class="subtitulo">Ingrese el nombre del alumno y su calificación correspondiente</p>
+        </div>
+        <form class="formulario" >
+            <div class="grupo-formulario">
+                <label>Nombre del estudiante: </label>
+                <input type="text" id="estudiante" placeholder="Ej. Manuel Hernandez" required pattern="[A-Za-z]+">
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Calificación: </label>
+                <input type="text" id="calif" placeholder="Ej. 70" required min="0">
+            </div>
+
+            <button class="boton-con" id="a" type="button" onclick="agregar()">Agregar Estudiante</button>
+            <button class="boton-con" id="c" type="button" onclick="calcular()">Calcular</button>
+
+            <div class="grupo-formulario">
+                <label>Promedio de las calificaciones: </label>
+                <input type="text" id="promedio" required readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label>Estudiante con calififación más alta: </label>
+                <input type="text" id="mayor" required readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label>Estudiante con calificación más baja: </label>
+                <input type="text" id="menor" required readonly>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

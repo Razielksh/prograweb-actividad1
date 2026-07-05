@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ejercicio11.js"></script>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+    <title>Kilometros a millas</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div>
+            <h1>Calculadora kilométros a millas</h1>
+        </div>
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label>Distancia en kilometros (km): </label>
+                <input type="text" id="kilometros" placeholder="Ej. 45" required>
+            </div>
+
+            <button class="boton-con" id="c" type="button" onclick="convertir()">Convertir</button>
+
+            <div class="grupo-formulario">
+                <label>Distancia en millas: </label>
+                <input type="text" id="millas" required readonly>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

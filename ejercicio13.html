@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ejercicio13.js"></script>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+    <title>Comprobación de edad</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div>
+            <h1>Comprobación de edad</h1>
+            <p class="subtitulo">Para poder votar es necesario ser mayor de edad</p>
+        </div>
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label>Ingrese su edad: </label>
+                <input type="text" id="edad" placeholder="Ej. 20" required>
+            </div>
+
+            <button class="boton-con" id="c" type="button" onclick="comprobar()">Verificar</button>
+
+            <div class="grupo-formulario">
+                <input type="text" id="ver" required readonly>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
