@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #2B2D42;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.contenedor {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+    color: #6C757D;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2B2D42;
+    margin-bottom: 30px;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #4CC9F0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+
+.boton-con {
+    background-color: #6e66e2;
+    color: rgb(243, 239, 239);
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.boton-con:hover {
+    box-shadow: 0 4px 12px rgba(128, 67, 214, 0.4);
+}
+
+.boton-con:active {
+    transform: scale(0.98);
+}
+
+.lista-tareas {
+    list-style: none;
+}
+
+.tarea-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+.tarea-texto {
+    word-break: break-word;
+    padding-right: 10px;
+}
+
+.boton-eliminar {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.boton-eliminar:hover {
+    background-color: #e85555;
+}
+
+.boton-eliminar:active {
+    transform: scale(0.95);
+}
+
+.lista-vacia {
+    text-align: center;
+    color: #6C757D;
+    font-size: 14px;
+    padding: 15px 0;
+}
